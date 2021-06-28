@@ -40,8 +40,3 @@ class SMSMessage:
         self.sid: str = message.sid
 
         return self.sid
-
-
-x = SMSMessage()
-sid = x.send()
-print()
