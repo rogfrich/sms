@@ -27,7 +27,8 @@ class SMSMessage:
 
     def send(self) -> str:
         """
-        Makes an API call to the Twilio API via the twilio helper library. Returns the message SID.
+        Makes an API call to the Twilio API via the twilio helper library to send the message.
+        Returns the message SID supplied by Twilio.
         """
         client = Client(self.account_sid, self.auth_token)
 
